@@ -44,4 +44,4 @@ test/
 
 ## Author
 
-Built for the Flutter Activity 1 assignment at Murillo.
+Lean Adrian B. Murillo
