@@ -6,7 +6,11 @@ class Pavlova extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Murillo_Activity1')),
+      appBar: AppBar(
+        title: const Text('Murillo_Activity1'),
+        backgroundColor: Colors.deepPurple,
+        foregroundColor: Colors.white,
+      ),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -18,9 +22,9 @@ class Pavlova extends StatelessWidget {
               fit: BoxFit.fill,
             ),
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(15.0),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const Text(
                     'Pavlova',
@@ -30,7 +34,6 @@ class Pavlova extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 8.0),
-                  buildRatingRow(),
                   const SizedBox(height: 8.0),
                   const Text(
                     'A meringue-based dessert named after the Russian '
@@ -40,6 +43,8 @@ class Pavlova extends StatelessWidget {
                     style: TextStyle(fontSize: 14.0, color: Colors.black54),
                   ),
                   const SizedBox(height: 16.0),
+                  buildRatingRow(),
+                  const SizedBox(height: 12.0),
                   buildRowTabs(),
                 ],
               ),
